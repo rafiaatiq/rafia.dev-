@@ -1,0 +1,60 @@
+:root {
+    --light: #fff;
+    --dark: #000;
+}
+body{
+    background-color: #ffffff;
+}
+.text-shadow{
+    text-shadow: 8px 5px 5px rgb(218, 218, 218)
+}
+.logoUnderline::before {
+    content: "";
+    position: absolute;
+    top: 2.3rem;
+    left: 1rem;
+    width: 80%;
+    height: 2px;
+    background-color: #000000;
+    /* border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5); */
+}
+/* .Section::before {
+    content: "";
+    position: absolute;
+    top: -60rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #74747417;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+} */
+.hover-underline-custom {
+    position: relative;
+    text-decoration: none;
+}
+
+.hover-underline-custom::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.hover-underline-custom:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+}
+.light-mode{
+    background-color: #fff;
+    color: #000;
+}
